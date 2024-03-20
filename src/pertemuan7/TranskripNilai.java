@@ -5,10 +5,10 @@ import java.util.Date;
 import java.util.List;
 
 public class TranskripNilai {
-    private Date tglCetak;
+    private final Date tglCetak;
     private double ipk = 0.0;
     private List<KartuHasilStudi> kartuHasilStudi;
-    private Mahasiswa mahasiswa;
+    private final Mahasiswa mahasiswa;
 
     public TranskripNilai(Mahasiswa mahasiswa){
         super();
@@ -42,37 +42,5 @@ public class TranskripNilai {
         for (KartuHasilStudi khs: kartuHasilStudi){
             System.out.println(khs.display());
         }
-    }
-
-    public Date getTglCetak() {
-        return tglCetak;
-    }
-
-    public void setTglCetak(Date tglCetak) {
-        this.tglCetak = tglCetak;
-    }
-
-    public double getIpk() {
-        return ipk;
-    }
-
-    public void setIpk(double ipk) {
-        this.ipk = ipk;
-    }
-
-    public List<KartuHasilStudi> getKartuHasilStudi() {
-        return kartuHasilStudi;
-    }
-
-    public void setKartuHasilStudi(List<KartuHasilStudi> kartuHasilStudi) {
-        this.kartuHasilStudi = kartuHasilStudi;
-    }
-
-    public Mahasiswa getMahasiswa() {
-        return mahasiswa;
-    }
-
-    public void setMahasiswa(Mahasiswa mahasiswa) {
-        this.mahasiswa = mahasiswa;
     }
 }
